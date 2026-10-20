@@ -1,0 +1,50 @@
+{
+  "title": "Movie Night 20-10 - LoveWorld",
+  "fade_in": 1.5,
+  "fade_out": 3.0,
+  "clips": [
+    {"section": "Opening", "label": "Jesus calls Mary by name", "file": "mary_called_by_name.mp4", "in": "2:29.50", "out": "3:02.40",
+     "speech": [[2.0, 32.0]], "speech_note": "set by hand: the detector missed the quiet line 'You are mine'"},
+
+    {"section": "Montage 1", "label": "Mary hugs Jesus", "file": "mary_called_by_name.mp4", "in": "3:20.25", "out": "3:26.50",
+     "speech": [[1.3, 3.0]], "speech_note": "set by hand: Jesus whispers 'Fear not'",
+     "transition": {"type": "fade", "duration": 1.0}},
+    {"section": "Montage 1", "label": "Peter's nets fill with fish", "file": "peter_fish.mp4", "in": "1:32.80", "out": "1:49.60",
+     "transition": {"type": "fade", "duration": 0.5}},
+    {"section": "Montage 1", "label": "Peter: 'Depart from me, I am a sinful man'", "file": "peter_fish.mp4", "in": "3:09.85", "out": "3:15.30",
+     "transition": {"type": "fade", "duration": 0.5}},
+    {"section": "Montage 1", "label": "Jesus talks to the children", "file": "children.mp4", "in": "0:46.84", "out": "0:50.30",
+     "transition": {"type": "fade", "duration": 0.5}},
+    {"section": "Montage 1", "label": "Jesus walks on water", "file": "walk_on_water.mp4", "in": "2:24.35", "out": "2:46.70",
+     "transition": {"type": "fade", "duration": 0.5}},
+
+    {"section": "Montage 2", "label": "Jesus heals the leper", "file": "leper.mp4", "in": "1:27.05", "out": "2:03.35",
+     "transition": {"type": "fadeblack", "duration": 1.0}},
+    {"section": "Montage 2", "label": "Jesus preaches to the 5,000", "file": "feed_5000.mp4", "in": "0:00.00", "out": "0:10.00",
+     "transition": {"type": "fade", "duration": 0.75}},
+    {"section": "Montage 2", "label": "Jesus prays over the bread", "file": "feed_5000.mp4", "in": "5:09.80", "out": "5:38.00",
+     "film_gain_db": 3.0, "film_gain_note": "Jesus' blessing over the bread is spoken softly, so lift this clip a little",
+     "transition": {"type": "fade", "duration": 0.75}},
+    {"section": "Montage 2", "label": "The disciples find the baskets full", "file": "feed_5000.mp4", "in": "7:33.40", "out": "8:06.05",
+     "speech": [], "speech_note": "no dialogue - the song carries the ending",
+     "transition": {"type": "fade", "duration": 0.75}}
+  ],
+  "music": {
+    "file": "song.mp3",
+    "note": "Story Of A Warrior is 2:10 long. The chorus section repeats 56.074 s apart, so we jump back once (92.0 s -> 35.926 s) to stretch it to about 3:06.",
+    "loop": {"jump_from": 92.0, "jump_to": 35.926, "crossfade": 0.3},
+    "last_hit": 123.5,
+    "last_hit_before_end": 3.5,
+    "level_db": 0.0,
+    "duck_db": -13.0
+  },
+  "dialogue": {
+    "level_db": 0.0,
+    "between_lines_db": -7.0,
+    "merge_gap": 3.0,
+    "pad_before": 0.35,
+    "pad_after": 0.5,
+    "ramp": 0.4
+  },
+  "loudness": {"target_lufs": -14.0, "true_peak": -1.5, "source_lufs": -18.0}
+}
